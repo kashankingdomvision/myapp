@@ -21,3 +21,12 @@
         <p>The click counter is <strong>not greater</strong> than 4.</p>
     </ng-template>
 </div>
+
+<div class="play-container" [style.background-color]="clickCounter > 4 ? 'yellow' : 'lightgray'">
+    <h6>Style Binding</h6>
+    <p>Click > 4 </p>
+</div>
+<!-- <div class="play-container" [ngStyle]="{
+    'background-color': clickCounter > 4 ? 'yellow' : 'lightgray',
+    'border':           clickCounter > 4 ? '4px solid black' : 'none'}
+"> -->
