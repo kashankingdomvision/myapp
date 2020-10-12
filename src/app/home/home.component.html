@@ -30,3 +30,11 @@
     'background-color': clickCounter > 4 ? 'yellow' : 'lightgray',
     'border':           clickCounter > 4 ? '4px solid black' : 'none'}
 "> -->
+
+<div class="play-container" [class.active]="clickCounter > 4">
+    Class Binding
+</div>
+
+<div class="play-container" [ngClass]="setClasses()">
+    Multiple Class Binding
+</div>
