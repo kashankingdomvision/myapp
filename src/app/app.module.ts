@@ -8,13 +8,15 @@ import { HomeComponent } from './home/home.component';
 // for two binding
 import { FormsModule } from '@angular/forms';
 import { ListComponent } from './list/list.component';
-import { HttpClientModule } from '@angular/common/http';  // Add this
+import { HttpClientModule } from '@angular/common/http';
+import { EmployeeCreateComponent } from './employee-create/employee-create.component';  // Add this
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ListComponent
+    ListComponent,
+    EmployeeCreateComponent
   ],
   imports: [
     BrowserModule,
